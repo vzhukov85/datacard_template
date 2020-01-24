@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+  <!-- вернуть при подключении Oracle
+    <changeSet id="before_update" author="erzhukov@i-teco.ru" runAlways="true">
+      <sql>alter session set NLS_LENGTH_SEMANTICS=CHAR</sql>
+      <rollback />
+    </changeSet> -->
+
+    <include relativeToChangelogFile="true" file="2020/changelog-2020.xml" />
+
+</databaseChangeLog>
